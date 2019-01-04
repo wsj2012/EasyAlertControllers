@@ -13,7 +13,7 @@
 		A2369D7D21DF65B8001753A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2369D7C21DF65B8001753A0 /* Assets.xcassets */; };
 		A2369D8021DF65B8001753A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2369D7E21DF65B8001753A0 /* LaunchScreen.storyboard */; };
 		A2369D8A21DF6647001753A0 /* EasilyAlertController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A2369D8921DF6646001753A0 /* EasilyAlertController.podspec */; };
-		A2369D8D21DF6658001753A0 /* EasilyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2369D8C21DF6657001753A0 /* EasilyAlertController.swift */; };
+		A2369D9021DF6879001753A0 /* EasilyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A2369D7F21DF65B8001753A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2369D8121DF65B8001753A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2369D8921DF6646001753A0 /* EasilyAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = EasilyAlertController.podspec; sourceTree = SOURCE_ROOT; };
-		A2369D8C21DF6657001753A0 /* EasilyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasilyAlertController.swift; sourceTree = "<group>"; };
+		A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasilyAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 		A2369D7421DF65B6001753A0 /* EasilyAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				A2369D8E21DF6879001753A0 /* Libs */,
 				A2369D8821DF6636001753A0 /* Supporting Files */,
-				A2369D8B21DF6657001753A0 /* Libs */,
 				A2369D7521DF65B6001753A0 /* AppDelegate.swift */,
 				A2369D7721DF65B6001753A0 /* ViewController.swift */,
 				A2369D7921DF65B6001753A0 /* Main.storyboard */,
@@ -78,13 +78,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A2369D8B21DF6657001753A0 /* Libs */ = {
+		A2369D8E21DF6879001753A0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				A2369D8C21DF6657001753A0 /* EasilyAlertController.swift */,
+				A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */,
 			);
-			name = Libs;
-			path = EasilyAlertController/Libs;
+			path = Libs;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -159,8 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2369D8D21DF6658001753A0 /* EasilyAlertController.swift in Sources */,
 				A2369D7821DF65B6001753A0 /* ViewController.swift in Sources */,
+				A2369D9021DF6879001753A0 /* EasilyAlertController.swift in Sources */,
 				A2369D7621DF65B6001753A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
