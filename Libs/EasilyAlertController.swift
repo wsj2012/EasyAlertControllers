@@ -47,7 +47,7 @@ open class EasyAlertAction: NSObject, NSCopying {
     }
 }
 
-class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+open class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
     var isPresenting: Bool?
     init(isPresenting: Bool?) {
@@ -125,7 +125,7 @@ class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     }
 }
 
-class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
+open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
     
     open var message: String?
     fileprivate(set) var preferredStyle: EasyAlertControllerStyle?
@@ -229,7 +229,7 @@ class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewContro
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
