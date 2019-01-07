@@ -23,9 +23,13 @@ pod 'EasilyAlertController'
 
 # Usage
 
-- SimpleAlert
+### All styles
 
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot1.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot1.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot2.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot3.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot4.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot5.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot6.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot7.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot8.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot9.png?raw=true" height="448" width="207"></div>
+
+- SimpleAlert
 
 ```
 func showSimpleAlert(_: IndexPath) {
@@ -44,8 +48,6 @@ func showSimpleAlert(_: IndexPath) {
 ```
 
 - OkayCancelAlert
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot2.png?raw=true" height="448" width="207"></div>
 
 ```
 func showOkayCancelAlert(_: IndexPath) {
@@ -69,8 +71,6 @@ func showOkayCancelAlert(_: IndexPath) {
 ```
 
 - OtherAlert(Show an alert with two custom buttons.)
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot3.png?raw=true" height="448" width="207"></div>
 
 ```
 func showOtherAlert(_: IndexPath) {
@@ -105,8 +105,6 @@ func showOtherAlert(_: IndexPath) {
 
 - TextEntryAlert
 
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot4.png?raw=true" height="448" width="207"></div>
-
 ```
 func showTextEntryAlert(_: IndexPath) {
         let title = "Text Entry Alert"
@@ -133,8 +131,6 @@ func showTextEntryAlert(_: IndexPath) {
 ```
 
 - SecureTextEntryAlert
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot5.png?raw=true" height="448" width="207"></div>
 
 ```
 func showSecureTextEntryAlert(_: IndexPath) {
@@ -176,8 +172,6 @@ func showSecureTextEntryAlert(_: IndexPath) {
 ```
 
 - CustomAlert
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot6.png?raw=true" height="448" width="207"></div>
 
 ```
 func showCustomAlert(_: IndexPath) {
@@ -255,8 +249,6 @@ func showCustomAlert(_: IndexPath) {
 
 - OkayCancelActionSheet
 
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot7.png?raw=true" height="448" width="207"></div>
-
 ```
 func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
@@ -277,8 +269,6 @@ func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
 ```
 
 - OtherActionSheet(Show a dialog with two custom buttons.)
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot8.png?raw=true" height="448" width="207"></div>
 
 ```
 func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
@@ -310,8 +300,6 @@ func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
 ```
 
 - CustomActionSheet
-
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot9.png?raw=true" height="448" width="207"></div>
 
 ```
 func showCustomActionSheet(_ selectedIndexPath: IndexPath) {
