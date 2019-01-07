@@ -25,10 +25,10 @@ pod 'EasilyAlertController'
 
 - SimpleAlert
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot1.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot1.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showSimpleAlert(_: IndexPath) {
+func showSimpleAlert(_: IndexPath) {
         let title = "Simple Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "OK"
@@ -45,10 +45,10 @@ pod 'EasilyAlertController'
 
 - OkayCancelAlert
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot2.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot2.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showOkayCancelAlert(_: IndexPath) {
+func showOkayCancelAlert(_: IndexPath) {
         let title = "Okay/Cancel Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
@@ -70,10 +70,10 @@ pod 'EasilyAlertController'
 
 - OtherAlert(Show an alert with two custom buttons.)
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot3.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot3.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showOtherAlert(_: IndexPath) {
+func showOtherAlert(_: IndexPath) {
         let title = "Other Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
@@ -105,10 +105,10 @@ pod 'EasilyAlertController'
 
 - TextEntryAlert
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot4.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot4.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showTextEntryAlert(_: IndexPath) {
+func showTextEntryAlert(_: IndexPath) {
         let title = "Text Entry Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
@@ -134,10 +134,10 @@ pod 'EasilyAlertController'
 
 - SecureTextEntryAlert
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot5.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot5.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showSecureTextEntryAlert(_: IndexPath) {
+func showSecureTextEntryAlert(_: IndexPath) {
         let title = "Secure Text Entry Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
@@ -177,10 +177,10 @@ pod 'EasilyAlertController'
 
 - CustomAlert
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot6.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot6.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showCustomAlert(_: IndexPath) {
+func showCustomAlert(_: IndexPath) {
         let title = "LOGIN"
         let message = "Input your ID and Password"
         let cancelButtonTitle = "Cancel"
@@ -255,10 +255,10 @@ pod 'EasilyAlertController'
 
 - OkayCancelActionSheet
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot7.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot7.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
+func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
         let destructiveButtonTitle = "OK"
         let alertController = EasilyAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -278,10 +278,10 @@ pod 'EasilyAlertController'
 
 - OtherActionSheet(Show a dialog with two custom buttons.)
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot8.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot8.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
+func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
         let title = "Other ActionSheet"
         let message = "A message should be a short, complete sentence."
         let destructiveButtonTitle = "Destructive Choice"
@@ -311,10 +311,10 @@ pod 'EasilyAlertController'
 
 - CustomActionSheet
 
-![EasilyAlertController](https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot9.png?raw=true)
+<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot9.png?raw=true" height="448" width="207"></div>
 
 ```
-	func showCustomActionSheet(_ selectedIndexPath: IndexPath) {
+func showCustomActionSheet(_ selectedIndexPath: IndexPath) {
         let title = "A Short Title is Best"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
