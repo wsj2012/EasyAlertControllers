@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  EasilyAlertController
+//  EasyAlertControllers
 //
 //  Created by 王树军 on 2019/1/4.
 //  Copyright © 2019 王树军. All rights reserved.

@@ -1,5 +1,5 @@
 //
-//  EasilyAlertController.swift
+//  EasyAlertControllers.swift
 //  SwiftLearn
 //
 //  Created by 王树军 on 2019/1/4.
@@ -28,7 +28,7 @@ open class EasyAlertAction: NSObject, NSCopying {
     open var enabled: Bool {
         didSet {
             if oldValue != enabled {
-                NotificationCenter.default.post(name: NSNotification.Name(EasilyAlertController.AlertActionEnabledDidChangeNotification), object: nil)
+                NotificationCenter.default.post(name: NSNotification.Name(EasyAlertControllers.AlertActionEnabledDidChangeNotification), object: nil)
             }
         }
     }
@@ -71,7 +71,7 @@ open class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func presentAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
-        let alertController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! EasilyAlertController
+        let alertController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as! EasyAlertControllers
         let containerView = transitionContext.containerView
         alertController.overlayView.alpha = 0.0
         if alertController.isAlert() {
@@ -108,7 +108,7 @@ open class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
     func dismissAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         
-        let alertController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! EasilyAlertController
+        let alertController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! EasyAlertControllers
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
                        animations: {
                         alertController.overlayView.alpha = 0.0
@@ -125,7 +125,7 @@ open class EasyAlertAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     }
 }
 
-open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
+open class EasyAlertControllers: UIViewController, UITextFieldDelegate, UIViewControllerTransitioningDelegate {
     
     open var message: String?
     fileprivate(set) var preferredStyle: EasyAlertControllerStyle?
@@ -217,7 +217,7 @@ open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewC
         self.definesPresentationContext = true
         self.modalPresentationStyle = UIModalPresentationStyle.custom
         // NotificationCenter
-        NotificationCenter.default.addObserver(self, selector: #selector(handleAlertActionEnabledDidChangeNotification(_:)), name: NSNotification.Name(EasilyAlertController.AlertActionEnabledDidChangeNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAlertActionEnabledDidChangeNotification(_:)), name: NSNotification.Name(EasyAlertControllers.AlertActionEnabledDidChangeNotification), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name:UIResponder.keyboardWillHideNotification, object: nil)
         
@@ -302,7 +302,7 @@ open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewC
         let containerViewTopSpaceConstraint = NSLayoutConstraint(item: containerView, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1.0, constant: 0.0)
         let containerViewRightSpaceConstraint = NSLayoutConstraint(item: containerView, attribute: .right, relatedBy: .equal, toItem: self.view, attribute: .right, multiplier: 1.0, constant: 0.0)
         let containerViewLeftSpaceConstraint = NSLayoutConstraint(item: containerView, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1.0, constant: 0.0)
-        containerViewBottomSpaceConstraint = NSLayoutConstraint(item: containerView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: EasilyAlertController.isIphoneX() ? -54 : 0.0)
+        containerViewBottomSpaceConstraint = NSLayoutConstraint(item: containerView, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: EasyAlertControllers.isIphoneX() ? -54 : 0.0)
         self.view.addConstraints([overlayViewTopSpaceConstraint, overlayViewRightSpaceConstraint, overlayViewLeftSpaceConstraint, overlayViewBottomSpaceConstraint, containerViewTopSpaceConstraint, containerViewRightSpaceConstraint, containerViewLeftSpaceConstraint, containerViewBottomSpaceConstraint!])
         
         if (isAlert()) {
@@ -335,7 +335,7 @@ open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewC
         let textAreaScrollViewBottomSpaceConstraint = NSLayoutConstraint(item: textAreaScrollView, attribute: .bottom, relatedBy: .equal, toItem: buttonAreaScrollView, attribute: .top, multiplier: 1.0, constant: 0.0)
         let buttonAreaScrollViewRightSpaceConstraint = NSLayoutConstraint(item: buttonAreaScrollView, attribute: .right, relatedBy: .equal, toItem: alertView, attribute: .right, multiplier: 1.0, constant: 0.0)
         let buttonAreaScrollViewLeftSpaceConstraint = NSLayoutConstraint(item: buttonAreaScrollView, attribute: .left, relatedBy: .equal, toItem: alertView, attribute: .left, multiplier: 1.0, constant: 0.0)
-        let buttonAreaScrollViewBottomSpaceConstraint = NSLayoutConstraint(item: buttonAreaScrollView, attribute: .bottom, relatedBy: .equal, toItem: alertView, attribute: .bottom, multiplier: 1.0, constant: isAlert() ? 0.0 : (EasilyAlertController.isIphoneX() ? -actionSheetBounceHeight/2 : -actionSheetBounceHeight))
+        let buttonAreaScrollViewBottomSpaceConstraint = NSLayoutConstraint(item: buttonAreaScrollView, attribute: .bottom, relatedBy: .equal, toItem: alertView, attribute: .bottom, multiplier: 1.0, constant: isAlert() ? 0.0 : (EasyAlertControllers.isIphoneX() ? -actionSheetBounceHeight/2 : -actionSheetBounceHeight))
         alertView.addConstraints([textAreaScrollViewTopSpaceConstraint, textAreaScrollViewRightSpaceConstraint, textAreaScrollViewLeftSpaceConstraint, textAreaScrollViewBottomSpaceConstraint, buttonAreaScrollViewRightSpaceConstraint, buttonAreaScrollViewLeftSpaceConstraint, buttonAreaScrollViewBottomSpaceConstraint])
         
         // TextAreaScrollView
@@ -688,7 +688,7 @@ open class EasilyAlertController: UIViewController, UITextFieldDelegate, UIViewC
     }
 }
 
-extension EasilyAlertController {
+extension EasyAlertControllers {
     static let AlertActionEnabledDidChangeNotification = "AlertActionEnabledDidChangeNotification"
     
     public static func isIphoneX() -> Bool {

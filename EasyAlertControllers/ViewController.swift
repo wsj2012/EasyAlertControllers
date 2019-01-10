@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  EasilyAlertController
+//  EasyAlertControllers
 //
 //  Created by 王树军 on 2019/1/4.
 //  Copyright © 2019 王树军. All rights reserved.
@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
 
     weak var secureTextAlertAction: EasyAlertAction?
-    var customAlertController: EasilyAlertController!
+    var customAlertController: EasyAlertControllers!
     weak var textField1: UITextField?
     weak var textField2: UITextField?
     weak var customAlertAction: EasyAlertAction?
@@ -69,7 +69,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(table)
     }
     
-    // MARK: EasilyAlertControllerStyleAlert Style Alerts
+    // MARK: EasyAlertControllersStyleAlert Style Alerts
     
     /// Show an alert with an "Okay" button.
     func showSimpleAlert(_: IndexPath) {
@@ -77,7 +77,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "OK"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // Create the action.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
@@ -97,7 +97,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
         
-        let alertCotroller = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertCotroller = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
@@ -124,7 +124,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let otherButtonTitleTwo = "Choice Two"
         let destructiveButtonTitle = "Destructive"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
@@ -159,7 +159,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // Add the text field for text entry.
         alertController.addTextFieldWithConfigurationHandler { textField in
@@ -189,7 +189,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // Add the text field for the secure text entry.
         alertController.addTextFieldWithConfigurationHandler { textField in
@@ -239,7 +239,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "Login"
         
-        customAlertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        customAlertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         
         // OverlayView
         customAlertController.overlayColor = UIColor(red:235/255, green:245/255, blue:255/255, alpha:0.7)
@@ -319,14 +319,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         present(customAlertController, animated: true, completion: nil)
     }
     
-    // MARK: EasilyAlertControllerStyleActionSheet Style Alerts
+    // MARK: EasyAlertControllersStyleActionSheet Style Alerts
     
     /// Show a dialog with an "Okay" and "Cancel" button.
     func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
         let destructiveButtonTitle = "OK"
         
-        let alertController = EasilyAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: nil, message: nil, preferredStyle: .actionSheet)
         
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
@@ -351,7 +351,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let destructiveButtonTitle = "Destructive Choice"
         let otherButtonTitle = "Safe Choice"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .actionSheet)
         
         // Create the actions.
         let destructiveAction = EasyAlertAction(title: destructiveButtonTitle, style: .destructive) { action in
@@ -386,7 +386,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let otherButtonTitle = "Save"
         let destructiveButtonTitle = "Delete"
         
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .actionSheet)
         
         // OverlayView
         alertController.overlayColor = UIColor(red:235/255, green:245/255, blue:255/255, alpha:0.7)

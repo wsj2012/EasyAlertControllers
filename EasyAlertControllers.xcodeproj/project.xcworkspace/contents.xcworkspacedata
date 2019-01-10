@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:EasilyAlertController.xcodeproj">
+      location = "self:/Users/wangshujun566/Documents/EasyAlertControllers/EasyAlertControllers.xcodeproj">
    </FileRef>
 </Workspace>

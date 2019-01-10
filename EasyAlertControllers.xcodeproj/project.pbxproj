@@ -12,20 +12,20 @@
 		A2369D7B21DF65B6001753A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2369D7921DF65B6001753A0 /* Main.storyboard */; };
 		A2369D7D21DF65B8001753A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2369D7C21DF65B8001753A0 /* Assets.xcassets */; };
 		A2369D8021DF65B8001753A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2369D7E21DF65B8001753A0 /* LaunchScreen.storyboard */; };
-		A2369D8A21DF6647001753A0 /* EasilyAlertController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A2369D8921DF6646001753A0 /* EasilyAlertController.podspec */; };
-		A2369D9021DF6879001753A0 /* EasilyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */; };
+		A2369D8A21DF6647001753A0 /* EasyAlertControllers.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A2369D8921DF6646001753A0 /* EasyAlertControllers.podspec */; };
+		A2369D9021DF6879001753A0 /* EasyAlertControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2369D8F21DF6879001753A0 /* EasyAlertControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2369D7221DF65B6001753A0 /* EasilyAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasilyAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2369D7221DF65B6001753A0 /* EasyAlertControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyAlertControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2369D7521DF65B6001753A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2369D7721DF65B6001753A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2369D7A21DF65B6001753A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2369D7C21DF65B8001753A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2369D7F21DF65B8001753A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2369D8121DF65B8001753A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2369D8921DF6646001753A0 /* EasilyAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = EasilyAlertController.podspec; sourceTree = SOURCE_ROOT; };
-		A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasilyAlertController.swift; sourceTree = "<group>"; };
+		A2369D8921DF6646001753A0 /* EasyAlertControllers.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = EasyAlertControllers.podspec; sourceTree = SOURCE_ROOT; };
+		A2369D8F21DF6879001753A0 /* EasyAlertControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAlertControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 		A2369D6921DF65B6001753A0 = {
 			isa = PBXGroup;
 			children = (
-				A2369D7421DF65B6001753A0 /* EasilyAlertController */,
+				A2369D7421DF65B6001753A0 /* EasyAlertControllers */,
 				A2369D7321DF65B6001753A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		A2369D7321DF65B6001753A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2369D7221DF65B6001753A0 /* EasilyAlertController.app */,
+				A2369D7221DF65B6001753A0 /* EasyAlertControllers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2369D7421DF65B6001753A0 /* EasilyAlertController */ = {
+		A2369D7421DF65B6001753A0 /* EasyAlertControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A2369D8E21DF6879001753A0 /* Libs */,
@@ -67,13 +67,13 @@
 				A2369D7E21DF65B8001753A0 /* LaunchScreen.storyboard */,
 				A2369D8121DF65B8001753A0 /* Info.plist */,
 			);
-			path = EasilyAlertController;
+			path = EasyAlertControllers;
 			sourceTree = "<group>";
 		};
 		A2369D8821DF6636001753A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2369D8921DF6646001753A0 /* EasilyAlertController.podspec */,
+				A2369D8921DF6646001753A0 /* EasyAlertControllers.podspec */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 		A2369D8E21DF6879001753A0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				A2369D8F21DF6879001753A0 /* EasilyAlertController.swift */,
+				A2369D8F21DF6879001753A0 /* EasyAlertControllers.swift */,
 			);
 			path = Libs;
 			sourceTree = SOURCE_ROOT;
@@ -89,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2369D7121DF65B6001753A0 /* EasilyAlertController */ = {
+		A2369D7121DF65B6001753A0 /* EasyAlertControllers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2369D8421DF65B8001753A0 /* Build configuration list for PBXNativeTarget "EasilyAlertController" */;
+			buildConfigurationList = A2369D8421DF65B8001753A0 /* Build configuration list for PBXNativeTarget "EasyAlertControllers" */;
 			buildPhases = (
 				A2369D6E21DF65B6001753A0 /* Sources */,
 				A2369D6F21DF65B6001753A0 /* Frameworks */,
@@ -101,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = EasilyAlertController;
+			name = EasyAlertControllers;
 			productName = EasilyAlertController;
-			productReference = A2369D7221DF65B6001753A0 /* EasilyAlertController.app */;
+			productReference = A2369D7221DF65B6001753A0 /* EasyAlertControllers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A2369D6D21DF65B6001753A0 /* Build configuration list for PBXProject "EasilyAlertController" */;
+			buildConfigurationList = A2369D6D21DF65B6001753A0 /* Build configuration list for PBXProject "EasyAlertControllers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2369D7121DF65B6001753A0 /* EasilyAlertController */,
+				A2369D7121DF65B6001753A0 /* EasyAlertControllers */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2369D8A21DF6647001753A0 /* EasilyAlertController.podspec in Resources */,
+				A2369D8A21DF6647001753A0 /* EasyAlertControllers.podspec in Resources */,
 				A2369D8021DF65B8001753A0 /* LaunchScreen.storyboard in Resources */,
 				A2369D7D21DF65B8001753A0 /* Assets.xcassets in Resources */,
 				A2369D7B21DF65B6001753A0 /* Main.storyboard in Resources */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2369D7821DF65B6001753A0 /* ViewController.swift in Sources */,
-				A2369D9021DF6879001753A0 /* EasilyAlertController.swift in Sources */,
+				A2369D9021DF6879001753A0 /* EasyAlertControllers.swift in Sources */,
 				A2369D7621DF65B6001753A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,13 +308,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9AHXPP233;
-				INFOPLIST_FILE = EasilyAlertController/Info.plist;
+				INFOPLIST_FILE = EasyAlertControllers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.EasilyAlertController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.EasyAlertControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,13 +327,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9AHXPP233;
-				INFOPLIST_FILE = EasilyAlertController/Info.plist;
+				INFOPLIST_FILE = EasyAlertControllers/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.EasilyAlertController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.EasyAlertControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2369D6D21DF65B6001753A0 /* Build configuration list for PBXProject "EasilyAlertController" */ = {
+		A2369D6D21DF65B6001753A0 /* Build configuration list for PBXProject "EasyAlertControllers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2369D8221DF65B8001753A0 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2369D8421DF65B8001753A0 /* Build configuration list for PBXNativeTarget "EasilyAlertController" */ = {
+		A2369D8421DF65B8001753A0 /* Build configuration list for PBXNativeTarget "EasyAlertControllers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2369D8521DF65B8001753A0 /* Debug */,
