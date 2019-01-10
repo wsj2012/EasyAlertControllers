@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "EasyAlertControllers"
-s.version      = "3.0.0"
+s.version      = "4.0.0"
 s.summary      = "自定制Alert、ActionSheet样式，适配最新swift版本，适配所有设备类型。"
 s.homepage     = "https://github.com/wsj2012/EasyAlertControllers"
 s.license      = "MIT"
