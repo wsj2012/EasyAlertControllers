@@ -1,4 +1,4 @@
-# EasilyAlertController
+# EasyAlertControllers
 
 Thanks for the author of DOAlertController, Because this library has not been updated for a long time, it can not be used in the latest version of swift 4.0 or above, and it has not adapted to the iPhoneX series devices. Here I update a new version to solve the above problems.
 
@@ -14,20 +14,20 @@ Thanks for the author of DOAlertController, Because this library has not been up
 The easiest way of installing EasySegmentedControl is via [CocoaPods](http://cocoapods.org/). 
 
 ```
-pod 'EasilyAlertController'
+pod 'EasyAlertControllers'
 ```
 
 ### Old-fashioned way
 
-- Add `EasilyAlertController.swift` to your project.
+- Add `EasyAlertControllers.swift` to your project.
 
 # Usage
 
 ### All styles
 
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot1.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot2.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot3.png?raw=true" height="448" width="207"></div>
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot4.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot5.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot6.png?raw=true" height="448" width="207"></div>
-<div align=center><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot7.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot8.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasilyAlertController/blob/master/screenshot9.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot1.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot2.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot3.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot4.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot5.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot6.png?raw=true" height="448" width="207"></div>
+<div align=center><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot7.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot8.png?raw=true" height="448" width="207"><img src="https://github.com/wsj2012/EasyAlertControllers/blob/master/screenshot9.png?raw=true" height="448" width="207"></div>
 
 - SimpleAlert
 
@@ -36,7 +36,7 @@ func showSimpleAlert(_: IndexPath) {
         let title = "Simple Alert"
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "OK"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // Create the action.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The simple alert's cancel action occured.")
@@ -55,7 +55,7 @@ func showOkayCancelAlert(_: IndexPath) {
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
-        let alertCotroller = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertCotroller = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The \"Okay/Cancel\" alert's cancel action occured.")
@@ -80,7 +80,7 @@ func showOtherAlert(_: IndexPath) {
         let otherButtonTitleOne = "Choice One"
         let otherButtonTitleTwo = "Choice Two"
         let destructiveButtonTitle = "Destructive"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The \"Other\" alert's cancel action occured.")
@@ -111,7 +111,7 @@ func showTextEntryAlert(_: IndexPath) {
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // Add the text field for text entry.
         alertController.addTextFieldWithConfigurationHandler { textField in
             // If you need to customize the text field, you can do so here.
@@ -138,7 +138,7 @@ func showSecureTextEntryAlert(_: IndexPath) {
         let message = "A message should be a short, complete sentence."
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "OK"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // Add the text field for the secure text entry.
         alertController.addTextFieldWithConfigurationHandler { textField in
             // Listen for changes to the text field's text so that we can toggle the current
@@ -179,7 +179,7 @@ func showCustomAlert(_: IndexPath) {
         let message = "Input your ID and Password"
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "Login"
-        customAlertController = EasilyAlertController(title: title, message: message, preferredStyle: .alert)
+        customAlertController = EasyAlertControllers(title: title, message: message, preferredStyle: .alert)
         // OverlayView
         customAlertController.overlayColor = UIColor(red:235/255, green:245/255, blue:255/255, alpha:0.7)
         // AlertView
@@ -253,7 +253,7 @@ func showCustomAlert(_: IndexPath) {
 func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
         let destructiveButtonTitle = "OK"
-        let alertController = EasilyAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: nil, message: nil, preferredStyle: .actionSheet)
         // Create the actions.
         let cancelAction = EasyAlertAction(title: cancelButtonTitle, style: .cancel) { action in
             NSLog("The \"Okay/Cancel\" alert action sheet's cancel action occured.")
@@ -276,7 +276,7 @@ func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
         let message = "A message should be a short, complete sentence."
         let destructiveButtonTitle = "Destructive Choice"
         let otherButtonTitle = "Safe Choice"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .actionSheet)
         // Create the actions.
         let destructiveAction = EasyAlertAction(title: destructiveButtonTitle, style: .destructive) { action in
             NSLog("The \"Other\" alert action sheet's destructive action occured.")
@@ -308,7 +308,7 @@ func showCustomActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
         let otherButtonTitle = "Save"
         let destructiveButtonTitle = "Delete"
-        let alertController = EasilyAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let alertController = EasyAlertControllers(title: title, message: message, preferredStyle: .actionSheet)
         // OverlayView
         alertController.overlayColor = UIColor(red:235/255, green:245/255, blue:255/255, alpha:0.7)
         // AlertView
