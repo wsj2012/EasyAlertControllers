@@ -11,9 +11,9 @@ Thanks for the author of DOAlertController, Because this library has not been up
 # Installation
 
 ### CocoaPods
-The easiest way of installing EasySegmentedControl is via [CocoaPods](http://cocoapods.org/). 
+The easiest way of installing EasyAlertControllers is via [CocoaPods](http://cocoapods.org/). 
 
-```
+```swift
 pod 'EasyAlertControllers'
 ```
 
@@ -31,7 +31,7 @@ pod 'EasyAlertControllers'
 
 - SimpleAlert
 
-```
+```swift
 func showSimpleAlert(_: IndexPath) {
         let title = "Simple Alert"
         let message = "A message should be a short, complete sentence."
@@ -49,7 +49,7 @@ func showSimpleAlert(_: IndexPath) {
 
 - OkayCancelAlert
 
-```
+```swift
 func showOkayCancelAlert(_: IndexPath) {
         let title = "Okay/Cancel Alert"
         let message = "A message should be a short, complete sentence."
@@ -72,7 +72,7 @@ func showOkayCancelAlert(_: IndexPath) {
 
 - OtherAlert(Show an alert with two custom buttons.)
 
-```
+```swift
 func showOtherAlert(_: IndexPath) {
         let title = "Other Alert"
         let message = "A message should be a short, complete sentence."
@@ -105,7 +105,7 @@ func showOtherAlert(_: IndexPath) {
 
 - TextEntryAlert
 
-```
+```swift
 func showTextEntryAlert(_: IndexPath) {
         let title = "Text Entry Alert"
         let message = "A message should be a short, complete sentence."
@@ -132,7 +132,7 @@ func showTextEntryAlert(_: IndexPath) {
 
 - SecureTextEntryAlert
 
-```
+```swift
 func showSecureTextEntryAlert(_: IndexPath) {
         let title = "Secure Text Entry Alert"
         let message = "A message should be a short, complete sentence."
@@ -173,7 +173,7 @@ func showSecureTextEntryAlert(_: IndexPath) {
 
 - CustomAlert
 
-```
+```swift
 func showCustomAlert(_: IndexPath) {
         let title = "LOGIN"
         let message = "Input your ID and Password"
@@ -249,7 +249,7 @@ func showCustomAlert(_: IndexPath) {
 
 - OkayCancelActionSheet
 
-```
+```swift
 func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
         let cancelButtonTitle = "Cancel"
         let destructiveButtonTitle = "OK"
@@ -270,7 +270,7 @@ func showOkayCancelActionSheet(_ selectedIndexPath: IndexPath) {
 
 - OtherActionSheet(Show a dialog with two custom buttons.)
 
-```
+```swift
 func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
         let title = "Other ActionSheet"
         let message = "A message should be a short, complete sentence."
@@ -301,7 +301,7 @@ func showOtherActionSheet(_ selectedIndexPath: IndexPath) {
 
 - CustomActionSheet
 
-```
+```swift
 func showCustomActionSheet(_ selectedIndexPath: IndexPath) {
         let title = "A Short Title is Best"
         let message = "A message should be a short, complete sentence."
