@@ -353,6 +353,6 @@ If you have any questions, Please check the demo or leave message for me.
 
 # License
 
-EasySegmentedControl is licensed under the terms of the MIT License. Please see the [LICENSE](LICENSE) file for full details.
+EasyAlertControllers is licensed under the terms of the MIT License. Please see the [LICENSE](LICENSE) file for full details.
 
 If this code was helpful, I would love to hear from you.
